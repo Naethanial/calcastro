@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>astronomical calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="constants-panel">
+    <h3>Constants</h3>
+    <div><button class="constant-btn" data-symbol="earth mass in kg">earth mass in kg</button></div>
+    <div><button class="constant-btn" data-symbol="solar mass in kg">solar mass in kg</button></div>
+    <div><button class="constant-btn" data-symbol="hubble constant">hubble constant</button></div>
+    <div><button class="constant-btn" data-symbol="arcsec to rad">arcsec to rad</button></div>
+    <div><button class="constant-btn" data-symbol="stefan const">stefan const</button></div>
+    <div><button class="constant-btn" data-symbol="pi">π</button></div>
+    <div><button class="constant-btn" data-symbol="degree to radian">degree to radian</button></div>
+    <div><button class="constant-btn" data-symbol="jupiter mass in kg">jupiter mass in kg</button></div>
+    <div><button class="constant-btn" data-symbol="gravitational constant">gravitational constant</button></div>
+    <div><button class="constant-btn" data-symbol="wein disp constant">wein disp constant</button></div>
+    <div><button class="constant-btn" data-symbol="partsec in km">parsec in km</button></div>
+    <div><button class="constant-btn" data-symbol="light year in km">light year in km</button></div>
+    <div><button class="constant-btn" data-symbol="speed of light">speed of light</button></div>
+    <div><button class="constant-btn" data-symbol="sun lumonosity in watts">sun lumonosity in watts</button></div>
+    <div><button class="constant-btn" data-symbol="sun absolute magnitude">sun absolute magnitude</button></div>
+  </div>
+
+  <div class="calculator-panel">
+    <div class="display-container">
+      <input type="text" id="expressionInput" class="display-input" placeholder="Enter expression..." />
+      <div id="resultDisplay" class="display-result"></div>
+    </div>
+
+    <div class="button-container">
+      <!-- Row 1 -->
+      <button data-value="(">(</button>
+      <button data-value=")">)</button>
+      <button data-value="^">^</button>
+      <button data-value="sin(">sin</button>
+      <button data-value="cos(">cos</button>
+
+      <!-- Row 2 -->
+      <button data-value="tan(">tan</button>
+      <button data-value="log(">log</button>
+      <button data-value="ln(">ln</button>
+      <button data-value="sqrt(">√</button>
+      <button data-value="%">%</button>
+
+      <!-- Row 3 -->
+      <button data-value="7">7</button>
+      <button data-value="8">8</button>
+      <button data-value="9">9</button>
+      <button data-value="/">÷</button>
+      <button data-value="*">×</button>
+
+      <!-- Row 4 -->
+      <button data-value="4">4</button>
+      <button data-value="5">5</button>
+      <button data-value="6">6</button>
+      <button data-value="-">-</button>
+      <button data-value="+">+</button>
+
+      <!-- Row 5 -->
+      <button data-value="1">1</button>
+      <button data-value="2">2</button>
+      <button data-value="3">3</button>
+      <button data-value=".">.</button>
+      <button id="clearBtn">C</button>
+
+      <!-- Row 6 -->
+      <button data-value="0">0</button>
+      
+      <button id="equalsBtn" style="grid-column: span 4;">=</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
